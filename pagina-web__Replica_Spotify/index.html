@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web player: música para todas as pessoas</title>
+    <script
+      src="https://kit.fontawesome.com/55366ea89f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+  </head>
+
+  <body>
+    <div class="topo"> <!-- CABEÇALHO TOTAL-->
+      <div class="esquerda">
+        <!--Esquerda -->
+        <a href="https://gabrielschug.github.io/replica_spotify/"> <i id="spotify" class="fa-brands fa-spotify"></i>  </a> <!--Spotify-->
+        <i id="home" class="fa-solid fa-house"></i>
+        <header class="search__bar">
+          <!-- Barra de Pesquisa -->
+          <i id="i_pesquisa" class="fa-solid fa-magnifying-glass"></i>
+          <input placeholder="O que você quer ouvir?" />
+        </header>
+      </div>
+      <div class="direita">
+        <!--Direita -->
+        <!-- Lista de Opções -->
+        <ul class="nav__lista">
+          <li><a target="_blank" href="https://www.spotify.com/br-pt/premium/">Premium</a></li>
+          <li><a target="_blank" href="https://support.spotify.com/br-pt/">Suporte</a></li>
+          <li><a target="_blank" href="https://www.spotify.com/br-pt/download/windows/">Baixar</a></li>
+        </ul>
+        <div class="entrar">
+          <!-- Inscrever/Entrar -->
+          <a target="_blank" href="https://open.spotify.com/download">Instalar Aplicativo</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2Fintl-pt%2F"> Inscrever-se</a>
+          <a target="_blank" href="https://accounts.spotify.com/pt-BR/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-pt%2F" class="bEntrar"> Entrar</a>
+        </div>
+      </div>
+    </div>
+    <div class="container"> <!-- TUDO ABAIXO DO CABEÇALHO-->
+      <nav class="sidebar"> <!-- SideBar Esquerda-->
+        <!-- Tela SideBar -->
+        <div class="nav__library">
+          <h4>Sua biblioteca</h4>
+          <p id="plus">+</p>
+        </div>
+        <div class="nav__playlist">
+          <!-- Caixa Playlist -->
+          <h5>Crie sua Primeira Playlist</h5>
+          <p>É fácil, vamos te ajudar</p>
+          <button>Criar Playlist</button>
+        </div>
+        <div class="nav__podcast">
+          <!-- Caixa Podcast -->
+          <h5>Que tal seguir um Podcast?</h5>
+          <p>Avisaremos você sobre novos episódios</p>
+          <button>Explore Podcast</button>
+        </div>
+        <div class="nav__footer">
+          <!-- Links Rodapé -->
+          <a target="_blank" href="https://www.spotify.com/br-pt/legal/end-user-agreement/">Legal</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/safetyandprivacy">Segurança e Centro de Privacidade</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/legal/privacy-policy/">Política de Privacidade</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/legal/privacy-policy/#s3">Sobre anúncios</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/accessibility">Acessibilidade</a>
+          <a target="_blank" href="https://www.spotify.com/br-pt/legal/cookies-policy/">Cookies</a>
+        </div>
+        <button class="nav__lang__button">
+          <!-- Botão Linguagem -->
+          <i class="fa-solid fa-globe"></i>
+          <!-- GLOBO -->
+          <p>Português do Brasil</p>
+        </button>
+      </nav>
+      <main> <!-- Tela Principal Direita-->
+        <!-- Tela Principal -->
+        <section class="content">
+          <!-- Caixa Conteúdos -->
+          <div class="content__titulo">
+            <h2>Artistas Populares</h2>
+            <a href="">Mostrar tudo</a>
+          </div>
+          <div class="artists__grid"></div>
+
+          <div class="content__titulo">
+            <h2>Álbuns Populares</h2>
+            <a href="">Mostrar tudo</a>
+          </div>
+          <div class="albums__grid"></div>
+        </section>
+      </main>
+    </div>
+    <div class="banner"> <!-- BANNER FIXO-->
+        <div>
+            <h2>Testar o Premium de graça</h2>
+            <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <button><a target="_blank" href="https://www.spotify.com/br-pt/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2Fintl-pt%2Fartist%2F487N2T9nIPEHrlTZLL3SQs">Inscreva-se grátis</a> </button>
+    </div>
+    <script src="scripts.js"></script> <!-- JAVASCRIPT-->
+  </body>
+</html>
